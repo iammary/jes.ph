@@ -1,0 +1,7 @@
+- Prefer type inference for return types.
+- Do not add manual return types to functions or components unless strictly necessary (e.g., to resolve complex inference issues).
+- Avoid `@returns` in JSDoc for TypeScript code where the return type is easily inferrable.
+- Use named exports instead of default exports.
+- Use arrow functions for components and functions.
+- Use Tailwind CSS for styling as much as possible.
+- Avoid global CSS classes; keep `globals.css` minimal and only for root-level styling.
