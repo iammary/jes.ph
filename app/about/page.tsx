@@ -27,7 +27,7 @@ export default function About() {
           communication, and creating environments where teams can do their best work.
         </p>
         <p>At the core of my approach is a simple idea:</p>
-        <blockquote className="border-l-4 border-white/30 pl-4 my-4">
+        <blockquote>
           <p>
             Great software not only enhances the user experience, <br /> but also empowers the teams who build it.
           </p>

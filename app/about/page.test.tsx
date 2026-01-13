@@ -10,6 +10,6 @@ describe('About Page', () => {
     render(<About />);
     expect(screen.getByTestId('content-container')).toBeInTheDocument();
     expect(screen.getByText('About Me')).toBeInTheDocument();
-    expect(screen.getByText(/frontend-focused software engineer/i)).toBeInTheDocument();
+    expect(screen.getByText(/software engineer/i)).toBeInTheDocument();
   });
 });

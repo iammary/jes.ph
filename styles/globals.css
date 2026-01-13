@@ -57,11 +57,20 @@ body {
 
 @layer base {
   h1 {
-    @apply text-4xl font-bold;
+    @apply text-2xl font-bold;
+  }
+
+  @media (min-width: 700px) {
+    h1 {
+      @apply text-4xl font-bold;
+    }
   }
   p {
     @apply text-lg;
     font-family: var(--font-inter), serif;
+  }
+  blockquote {
+    @apply border-l-4 border-white/30 pl-4 my-4;
   }
   blockquote,
   blockquote p {
