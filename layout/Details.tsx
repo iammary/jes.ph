@@ -22,7 +22,7 @@ export const Details = () => (
         <Link href="/blog">{'<Blog />'}</Link>
       </div>
     </div>
-    <Link href="/" className="absolute top-(--spacing-base) left-(--spacing-base) text-5xl font-bold uppercase leading-none text-white max-[700px]:text-2xl">
+    <Link href="/" className="absolute top-(--spacing-base) left-(--spacing-base) text-5xl font-bold uppercase leading-none max-[700px]:text-2xl">
       jes.ph
     </Link>
   </>

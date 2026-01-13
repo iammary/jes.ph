@@ -73,11 +73,11 @@ This project uses **Vitest** with **React Testing Library** for functional unit 
 
 Run all tests:
 
-    npm test
+    npm test:watch
 
 Run tests once (CI-style):
 
-    npm test -- --run
+    npm test
 
 Lint the codebase:
 

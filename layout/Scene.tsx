@@ -80,7 +80,7 @@ type CanvasProps = PropsWithChildren<{
   onError: (error: Error) => void;
 }>;
 
-const Canvas: FC<CanvasProps> = ({ children, onError }) => {
+export const Canvas: FC<CanvasProps> = ({ children, onError }) => {
   extend({ Mesh, PlaneGeometry, Group, MeshBasicMaterial, ShapeGeometry });
   const canvas = useRef<HTMLCanvasElement>(null);
   const root = useRef<ReconcilerRoot<HTMLCanvasElement> | null>(null);

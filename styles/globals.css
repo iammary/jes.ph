@@ -37,6 +37,24 @@ body {
   font-family: var(--font-cal-sans), serif;
 }
 
+[data-theme='light'] {
+  --foreground: black;
+  color: var(--foreground);
+}
+
+[data-theme='light'] a {
+  color: var(--foreground);
+}
+
+[data-theme='dark'] {
+  --foreground: white;
+  color: var(--foreground);
+}
+
+[data-theme='dark'] a {
+  color: var(--foreground);
+}
+
 @layer base {
   h1 {
     @apply text-4xl font-bold;
