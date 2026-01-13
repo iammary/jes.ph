@@ -6,12 +6,14 @@
 [![Vitest](https://img.shields.io/badge/Tests-Vitest-yellow)](https://vitest.dev/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-![jes.ph-code](/public/jes-code.png)
-
 Personal portfolio and frontend architecture playground.  
 Live at **https://jes.ph**
 
 Built with **Next.js**, this project focuses on modern frontend patterns, scalable UI architecture, and performance-conscious design.
+
+<p style="text-align: center">
+  <img src="/public/jes-code.png" alt="jes.ph-code" style="max-width: 200px" />
+</p>
 
 ---
 
