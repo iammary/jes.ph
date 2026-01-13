@@ -1,7 +1,7 @@
 /* eslint-disable sonarjs/pseudo-random, react-hooks/purity */
 'use client';
 
-import React, { useRef, useMemo, FC } from 'react';
+import { useRef, useMemo, FC } from 'react';
 import { useFrame, useThree } from '@react-three/fiber';
 import * as THREE from 'three';
 

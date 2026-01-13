@@ -61,6 +61,12 @@ const eslintConfig = defineConfig([
       "import/no-default-export": "off",
     },
   },
+  {
+    files: ["**/*.test.ts", "**/*.test.tsx"],
+    rules: {
+      "@typescript-eslint/no-explicit-any": "off",
+    },
+  },
 ]);
 
 export default eslintConfig;

@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# jes.ph
+
+[![Next.js](https://img.shields.io/badge/Next.js-App-black)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Strict-blue)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-Utility--first-38bdf8)](https://tailwindcss.com/)
+[![Vitest](https://img.shields.io/badge/Tests-Vitest-yellow)](https://vitest.dev/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+
+Personal portfolio and frontend architecture playground.  
+Live at **https://jes.ph**
+
+Built with **Next.js**, this project focuses on modern frontend patterns, scalable UI architecture, and performance-conscious design.
+
+---
+
+## Overview
+
+This repository serves two purposes:
+
+- A **personal portfolio** showcasing work, experience, and ideas
+- A **frontend architecture playground** for exploring patterns, composition, and maintainability
+
+The codebase prioritizes clarity, explicit structure, and modern tooling over unnecessary abstraction.
+
+---
+
+## Tech Stack
+
+- Framework: [Next.js](https://nextjs.org/) (App Router)
+- Styling: [Tailwind CSS](https://tailwindcss.com/)
+- Testing: [Vitest](https://vitest.dev/) and [React Testing Library](https://testing-library.com/)
+- Fonts: [Cal Sans](https://github.com/calcom/font) and Inter
+- Package Manager: npm
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js (LTS recommended)
+- npm
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Cal Sans](https://github.com/calcom/font).
+### Development
 
-## Learn More
+Start the local development server:
 
-To learn more about Next.js, take a look at the following resources:
+    npm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Open the site locally at:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    http://localhost:3000
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Production Build
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Create an optimized production build:
+
+    npm run build
+
+---
+
+## Project Structure
+
+    app/        Next.js App Router pages, layouts, and metadata
+    layout/     Shared UI layout components
+    utils/      Utility functions and helpers
+    public/     Static assets (images, fonts)
+    styles/     Global styles and Tailwind configuration
+
+---
+
+## Testing
+
+This project uses **Vitest** with **React Testing Library** for functional unit testing.
+
+Run all tests:
+
+    npm test
+
+Run tests once (CI-style):
+
+    npm test -- --run
+
+Lint the codebase:
+
+    npm run lint
+
+### Test Conventions
+
+- Test files are colocated with the files they test
+- Example: Component.tsx → Component.test.tsx
+- Tests favor functional and unit-level coverage over heavy integration tests
+
+---
+
+## Deployment
+
+The site is deployed to production at:
+
+https://jes.ph
+
+Deployment details are intentionally minimal and may evolve over time.
+
+---
+
+## License
+
+This project is licensed under the MIT License.  
+See the LICENSE file for details.
