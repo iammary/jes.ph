@@ -50,6 +50,11 @@ body {
     font-family: var(--font-cal-sans), serif;
   }
   a {
-    @apply no-underline hover:underline;
+    @apply no-underline
+      transition-all duration-200;
+  }
+
+  a:hover {
+    @apply -translate-y-0.5;
   }
 }
