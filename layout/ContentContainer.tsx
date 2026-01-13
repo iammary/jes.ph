@@ -4,7 +4,7 @@ export const ContentContainer: React.FC<{
   mode?: 'dark' | 'light';
 }> = ({ children, centered = false, mode = 'dark' }) => (
   <div
-    className={`flex min-h-screen w-full items-center justify-center p-(--spacing-base) pt-(--spacing-lg) md:pl-(--spacing-base) ${
+    className={`flex min-h-screen w-full items-center justify-center p-(--spacing-base) pt-(--spacing-md) md:pt-(--spacing-lg) md:pl-(--spacing-base) ${
       centered ? 'md:justify-center' : 'md:justify-start'
     }`}
     data-theme={mode}>
