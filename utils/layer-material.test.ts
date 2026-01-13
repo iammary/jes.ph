@@ -1,13 +1,14 @@
 import './layer-material';
 
 vi.mock('@react-three/drei', () => ({
-  shaderMaterial: vi.fn((uniforms, vertex, fragment) => {
-    return function MockMaterial(this: any) {
-      this.uniforms = uniforms;
-      this.vertexShader = vertex;
-      this.fragmentShader = fragment;
-    };
-  }),
+  shaderMaterial: vi.fn(
+    (uniforms, vertex, fragment) =>
+      function MockMaterial(this: any) {
+        this.uniforms = uniforms;
+        this.vertexShader = vertex;
+        this.fragmentShader = fragment;
+      },
+  ),
 }));
 
 vi.mock('@react-three/fiber', () => ({

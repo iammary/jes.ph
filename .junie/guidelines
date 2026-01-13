@@ -14,6 +14,8 @@
 ### 1.3 Functions and Components
 - All functions and React components **MUST** be defined using arrow function syntax.
 - Function declarations (`function foo() {}`) **MUST NOT** be used.
+- Arrow functions that only contain a single `return` statement **MUST** use the concise body syntax (omitting the `return` keyword and the braces).
+  - Example: `const Foo = () => <div />;` instead of `const Foo = () => { return <div />; };`
 
 ### 1.4 React Usage
 - The `React` module **MUST NOT** be imported explicitly (e.g., `import React from 'react'`).
@@ -74,5 +76,5 @@
   3. No code or comments between imports and mocks
 
 ### 4.6 Running Tests
-- Tests **MUST** be run using `npm test` or `npm test -- --run`.
+- Tests **MUST** be run using `npm test -- --run` **ONLY**.
 - Coverage commands (e.g., `npm run test:coverage`) **MUST NOT** be used.

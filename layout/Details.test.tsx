@@ -8,7 +8,7 @@ describe('Details', () => {
     expect(screen.getByText('About')).toBeInTheDocument();
     expect(screen.getByText('Linkedin')).toBeInTheDocument();
     expect(screen.getByText('Github')).toBeInTheDocument();
-    expect(screen.getByText('Blog')).toBeInTheDocument();
+    expect(screen.getByText('<Blog />')).toBeInTheDocument();
   });
 
   it('renders the branding link', () => {

@@ -49,4 +49,7 @@ body {
   blockquote p {
     font-family: var(--font-cal-sans), serif;
   }
+  a {
+    @apply no-underline hover:underline;
+  }
 }
