@@ -6,6 +6,8 @@
 [![Vitest](https://img.shields.io/badge/Tests-Vitest-yellow)](https://vitest.dev/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
+![jes.ph-code](/public/jes-code.png)
+
 Personal portfolio and frontend architecture playground.  
 Live at **https://jes.ph**
 
