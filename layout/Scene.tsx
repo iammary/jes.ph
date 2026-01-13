@@ -6,13 +6,13 @@ import { createRoot, events, extend, ReconcilerRoot, useFrame } from '@react-thr
 import { Plane, useAspect, useTexture } from '@react-three/drei';
 import { LayerMaterialType } from '@/utils/layer-material';
 import Image from 'next/image';
+import '@/utils/layer-material';
+import { FallingLeaves } from '@/layout/FallingLeaves';
 
 const bgUrl = '/bg.png';
 const mainImgUrl = '/jes.png';
 const leaves1Url = '/autumn-1.png';
 const leaves2Url = '/autumn-2.png';
-import '@/utils/layer-material';
-import { FallingLeaves } from '@/layout/FallingLeaves';
 
 const Experience = () => {
   const scaleN = useAspect(1600, 1000, 1);
@@ -80,7 +80,7 @@ type CanvasProps = PropsWithChildren<{
   onError: (error: Error) => void;
 }>;
 
-const Canvas: FC<CanvasProps> = ({ children, onError }) => {
+export const Canvas: FC<CanvasProps> = ({ children, onError }) => {
   extend({ Mesh, PlaneGeometry, Group, MeshBasicMaterial, ShapeGeometry });
   const canvas = useRef<HTMLCanvasElement>(null);
   const root = useRef<ReconcilerRoot<HTMLCanvasElement> | null>(null);

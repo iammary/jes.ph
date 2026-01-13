@@ -6,24 +6,39 @@ vi.mock('next/font/google', () => ({
   Inter: () => ({ variable: 'inter' }),
 }));
 
-vi.mock('@/layout/Scene', () => ({
-  Scene: () => <div data-testid="scene" />,
+vi.mock('@/layout/BodyContainer', () => ({
+  BodyContainer: ({ children }: { children: React.ReactNode }) => <div data-testid="body-container">{children}</div>,
 }));
 
-vi.mock('@/layout/Details', () => ({
-  Details: () => <div data-testid="details" />,
-}));
+// Suppress hydration and structure warnings for RootLayout
+const originalConsoleError = console.error;
+vi.spyOn(console, 'error').mockImplementation((...args: any[]) => {
+  const msg = args.map(String).join(' ');
+  if (
+    msg.includes('In HTML, <html> cannot be a child of') ||
+    msg.includes('cannot be a child of <html>') ||
+    msg.includes('cannot be a child of <div>') ||
+    msg.includes('hydration error')
+  ) {
+    return;
+  }
+  originalConsoleError(...args);
+});
 
 describe('RootLayout', () => {
-  it('renders children and layout components', () => {
+  it('renders html and body with font variables', () => {
     render(
       <RootLayout>
-        <div data-testid="child">Child Content</div>
+        <div data-testid="child">Child</div>
       </RootLayout>,
     );
 
-    expect(screen.getByTestId('scene')).toBeInTheDocument();
-    expect(screen.getByTestId('details')).toBeInTheDocument();
+    const html = document.documentElement;
+    const body = document.body;
+
+    expect(html).toHaveAttribute('lang', 'en');
+    expect(body).toHaveClass('cal-sans', 'inter', 'antialiased');
+    expect(screen.getByTestId('body-container')).toBeInTheDocument();
     expect(screen.getByTestId('child')).toBeInTheDocument();
   });
 });

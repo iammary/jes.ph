@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
 import { Cal_Sans, Inter } from 'next/font/google';
 import '@/styles/globals.css';
-import { Scene } from '@/layout/Scene';
-import { Details } from '@/layout/Details';
+import { BodyContainer } from '@/layout/BodyContainer';
 
 const calSans = Cal_Sans({
   variable: '--font-cal-sans',
@@ -30,13 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${calSans.variable} ${inter.variable} antialiased`}>
-        <div id="root">
-          <Scene />
-          <div className="absolute top-0 left-0 h-full w-full text-white pointer-events-none *:pointer-events-auto overflow-y-auto">
-            <Details />
-            {children}
-          </div>
-        </div>
+        <BodyContainer>{children}</BodyContainer>
       </body>
     </html>
   );

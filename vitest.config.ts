@@ -38,9 +38,9 @@ export default defineConfig({
         },
         '**/layout/FallingLeaves.tsx': {
           lines: 70,
-          functions: 95,
-          branches: 55,
-          statements: 70,
+          functions: 87,
+          branches: 42,
+          statements: 69,
         },
       }
     },

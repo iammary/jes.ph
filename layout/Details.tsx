@@ -16,11 +16,13 @@ export const Details = () => (
     <div className="fixed bottom-(--spacing-base) right-(--spacing-base) left-(--spacing-base) flex flex-wrap items-center justify-between gap-(--spacing-msm)">
       <span>Illustrations × Adobe Firefly AI</span>
       <div className="flex items-center gap-(--spacing-sm)">
-        <Link href="https://github.com/iammary/jes.ph">{'<Source />'}</Link>
+        <Link target="_blank" href="https://github.com/iammary/jes.ph">
+          {'<Source />'}
+        </Link>
         <Link href="/blog">{'<Blog />'}</Link>
       </div>
     </div>
-    <Link href="/" className="absolute top-(--spacing-base) left-(--spacing-base) text-5xl font-bold uppercase leading-none text-white max-[700px]:text-2xl">
+    <Link href="/" className="absolute top-(--spacing-base) left-(--spacing-base) text-5xl font-bold uppercase leading-none max-[700px]:text-2xl">
       jes.ph
     </Link>
   </>

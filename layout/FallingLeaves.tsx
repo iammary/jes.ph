@@ -5,6 +5,11 @@ import { useRef, useMemo, FC } from 'react';
 import { useFrame, useThree } from '@react-three/fiber';
 import * as THREE from 'three';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const Mesh = 'mesh' as any;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const MeshBasicMaterial = 'meshBasicMaterial' as any;
+
 interface LeafUserData {
   fallSpeed: number;
   swaySpeed: number;
@@ -27,7 +32,7 @@ interface LeafProps {
   initialRotation: [number, number, number];
 }
 
-const Leaf: FC<LeafProps> = ({ position, size, color, userData, bounds, initialRotation }) => {
+export const Leaf: FC<LeafProps> = ({ position, size, color, userData, bounds, initialRotation }) => {
   const meshRef = useRef<THREE.Mesh>(null);
 
   // Create leaf shape geometry
@@ -77,9 +82,9 @@ const Leaf: FC<LeafProps> = ({ position, size, color, userData, bounds, initialR
   });
 
   return (
-    <mesh ref={meshRef} position={position} scale={[size, size, size]} rotation={initialRotation} geometry={geometry} userData={userData}>
-      <meshBasicMaterial color={color} side={THREE.DoubleSide} transparent opacity={0.8} />
-    </mesh>
+    <Mesh ref={meshRef} position={position} scale={[size, size, size]} rotation={initialRotation} geometry={geometry} userData={userData}>
+      <MeshBasicMaterial color={color} side={THREE.DoubleSide} transparent opacity={0.8} />
+    </Mesh>
   );
 };
 
