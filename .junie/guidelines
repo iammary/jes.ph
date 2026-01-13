@@ -76,5 +76,4 @@
   3. No code or comments between imports and mocks
 
 ### 4.6 Running Tests
-- Tests **MUST** be run using `npm test -- --run` **ONLY**.
-- Coverage commands (e.g., `npm run test:coverage`) **MUST NOT** be used.
+- Tests **MUST** be run checking coverage using `npm run test:coverage`.
