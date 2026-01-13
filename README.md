@@ -1,5 +1,6 @@
 # jes.ph
 
+[![Build](https://github.com/iammary/jes.ph/actions/workflows/ci.yml/badge.svg)](https://github.com/iammary/jes.ph/actions/workflows/ci.yml)
 [![Next.js](https://img.shields.io/badge/Next.js-App-black)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Strict-blue)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-Utility--first-38bdf8)](https://tailwindcss.com/)
