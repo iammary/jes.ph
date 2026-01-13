@@ -11,7 +11,7 @@ export default function About() {
     <ContentContainer>
       <h1>About Me</h1>
       <div className="flex flex-col gap-4">
-        <p>I’m Jes — a frontend-focused software engineer based in Melbourne, with over 15 years of experience building and evolving web applications.</p>
+        <p>I’m Jes — a software engineer in Melbourne, turning ideas into web apps for 15+ years.</p>
         <p>
           I’ve worked in the Philippines, Singapore, and Australia, collaborating with teams to build products in EdTech, FinTech (like cryptocurrency and
           stockbroking), and geospatial technologies. As my career has evolved, I’ve found myself increasingly interested in frontend architecture. I enjoy
