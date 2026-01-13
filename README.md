@@ -6,14 +6,14 @@
 [![Vitest](https://img.shields.io/badge/Tests-Vitest-yellow)](https://vitest.dev/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-![jes.ph-code](/public/jes-code.png)
-
 Personal portfolio and frontend architecture playground.  
 Live at **https://jes.ph**
 
 Built with **Next.js**, this project focuses on modern frontend patterns, scalable UI architecture, and performance-conscious design.
 
----
+<p align="center">
+  <img src="/public/jes-code.png" alt="jes.ph-code" width="200" />
+</p>
 
 ## Overview
 
@@ -24,8 +24,6 @@ This repository serves two purposes:
 
 The codebase prioritizes clarity, explicit structure, and modern tooling over unnecessary abstraction.
 
----
-
 ## Tech Stack
 
 - Framework: [Next.js](https://nextjs.org/) (App Router)
@@ -33,8 +31,6 @@ The codebase prioritizes clarity, explicit structure, and modern tooling over un
 - Testing: [Vitest](https://vitest.dev/) and [React Testing Library](https://testing-library.com/)
 - Fonts: [Cal Sans](https://github.com/calcom/font) and Inter
 - Package Manager: npm
-
----
 
 ## Getting Started
 
@@ -57,15 +53,11 @@ Open the site locally at:
 
     http://localhost:3000
 
----
-
 ## Production Build
 
 Create an optimized production build:
 
     npm run build
-
----
 
 ## Project Structure
 
@@ -74,8 +66,6 @@ Create an optimized production build:
     utils/      Utility functions and helpers
     public/     Static assets (images, fonts)
     styles/     Global styles and Tailwind configuration
-
----
 
 ## Testing
 
@@ -99,8 +89,6 @@ Lint the codebase:
 - Example: Component.tsx → Component.test.tsx
 - Tests favor functional and unit-level coverage over heavy integration tests
 
----
-
 ## Deployment
 
 The site is deployed to production at:
@@ -108,8 +96,6 @@ The site is deployed to production at:
 https://jes.ph
 
 Deployment details are intentionally minimal and may evolve over time.
-
----
 
 ## License
 
