@@ -18,6 +18,7 @@ export default defineConfig({
         '**/*.test.tsx',
         '**/*.test.ts',
         'styles/**',
+        'scripts/**',
       ],
       thresholds: {
         lines: 70,
