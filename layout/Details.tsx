@@ -14,7 +14,7 @@ export const Details = () => (
       </Link>
     </nav>
     <div className="fixed bottom-(--spacing-base) right-(--spacing-base) left-(--spacing-base) flex flex-wrap items-center justify-between gap-(--spacing-msm)">
-      <span>Illustrations × Adobe Firefly AI</span>
+      <span className="invisible">Illustrations × Adobe Firefly AI</span>
       <div className="flex items-center gap-(--spacing-sm)">
         <Link target="_blank" href="https://github.com/iammary/jes.ph">
           {'<Source />'}
