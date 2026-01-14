@@ -1,8 +1,10 @@
-export const ContentContainer: React.FC<{
+interface ContentContainerProps {
   children: React.ReactNode;
   centered?: boolean;
   mode?: 'dark' | 'light';
-}> = ({ children, centered = false, mode = 'dark' }) => (
+}
+
+export const ContentContainer = ({ children, centered = false, mode = 'dark' }: ContentContainerProps) => (
   <div
     className={`flex min-h-screen w-full items-center justify-center p-(--spacing-base) pt-(--spacing-md) md:pt-(--spacing-lg) md:pl-(--spacing-base) ${
       centered ? 'md:justify-center' : 'md:justify-start'

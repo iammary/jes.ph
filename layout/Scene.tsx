@@ -10,51 +10,41 @@ import '@/utils/layer-material';
 import { FallingLeaves } from '@/layout/FallingLeaves';
 
 const bgUrl = '/bg.png';
-const mainImgUrl = '/jes.png';
-const leaves1Url = '/autumn-1.png';
-const leaves2Url = '/autumn-2.png';
+const leaves1Url = '/autumn.png';
+const leaves2Url = '/autumn-1.png';
 
 const Experience = () => {
-  const scaleN = useAspect(1600, 1000, 1);
-  const scaleW = useAspect(1600, 1000, 1);
-  const textures = useTexture([bgUrl, mainImgUrl, leaves1Url, leaves2Url]);
+  const aspect = useAspect(1600, 1000, 1);
+  const textures = useTexture([bgUrl, leaves1Url, leaves2Url]);
   const group = useRef<Group>(null);
   const layersRef = useRef<LayerMaterialType[]>([]);
   const layers = [
-    { texture: textures[0], x: 0, y: 0, z: 0, factor: 0.005, scale: scaleW },
+    { texture: textures[0], x: 0, y: 0, z: 0, factor: 0.005, scale: aspect },
     {
       texture: textures[1],
-      x: 0,
-      y: 0,
-      z: 30,
-      scaleFactor: 1,
-      scale: scaleN,
-    },
-    {
-      texture: textures[2],
       x: 0,
       y: 0,
       z: 40,
       factor: 0.03,
       scaleFactor: 1,
-      wiggle: 0.6,
-      scale: scaleW,
+      wiggle: 0.5,
+      scale: aspect,
     },
     {
-      texture: textures[3],
+      texture: textures[2],
       x: -20,
       y: -20,
       z: 49,
       factor: 0.04,
-      scaleFactor: 1.3,
-      wiggle: 1,
-      scale: scaleW,
+      scaleFactor: 1,
+      wiggle: 0.8,
+      scale: aspect,
     },
   ];
 
   useFrame((_state, delta) => {
-    if (layersRef.current[2] && layersRef.current[3]) {
-      layersRef.current[2].uniforms.time.value = layersRef.current[3].uniforms.time.value += delta;
+    if (layersRef.current[1] && layersRef.current[2]) {
+      layersRef.current[1].uniforms.time.value = layersRef.current[2].uniforms.time.value += delta;
     }
   });
 

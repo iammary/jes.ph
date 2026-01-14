@@ -18,19 +18,19 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'Jes | Software Engineer',
-  description: 'Frontend-focused software engineer based in Melbourne.',
+  description: 'Software engineer, frontend architect, based in Melbourne.',
 };
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <body className={`${calSans.variable} ${inter.variable} antialiased`}>
-        <BodyContainer>{children}</BodyContainer>
-      </body>
-    </html>
-  );
-}
+}>) => (
+  <html lang="en">
+    <body className={`${calSans.variable} ${inter.variable} antialiased`}>
+      <BodyContainer>{children}</BodyContainer>
+    </body>
+  </html>
+);
+
+export default RootLayout;

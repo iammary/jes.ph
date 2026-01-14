@@ -9,7 +9,9 @@
 
 ### 1.2 Exports
 - Only **named exports** **MUST** be used.
-- Default exports **MUST NOT** be used.
+- Default exports **MUST NOT** be used in general.
+- Exception: Next.js pages, layouts, and other special files that **REQUIRE** default exports **MUST** still use arrow functions for the component definition before exporting.
+  - Example: `const Page = () => <div />; export default Page;`
 
 ### 1.3 Functions and Components
 - All functions and React components **MUST** be defined using arrow function syntax.
@@ -21,7 +23,12 @@
 - The `React` module **MUST NOT** be imported explicitly (e.g., `import React from 'react'`).
 - The automatic JSX runtime and global `React` type namespace **MUST** be assumed.
 
-### 1.5 Comments
+### 1.5 React.FC Usage
+- `React.FC` or `React.FunctionComponent` **MUST NOT** be used for typing components.
+- Props **MUST** be typed directly in the arrow function parameters.
+- Example: `const Foo = ({ bar }: FooProps) => <div />`
+
+### 1.6 Comments
 - Non-essential comments **MUST NOT** be added.
 - Placeholder, explanatory, or mock-related comments that do not affect runtime behavior **MUST** be avoided.
 
@@ -77,3 +84,15 @@
 
 ### 4.6 Running Tests
 - Tests **MUST** be run checking coverage using `npm run test`.
+
+---
+
+## 5. Verification Checklist
+Before submitting, ensure:
+1. [ ] No explicit `import React from 'react'`
+2. [ ] No explicit `import { describe, it, expect, vi } from 'vitest'`
+3. [ ] No `React.FC` or `React.FunctionComponent` usage
+4. [ ] All functions and components use arrow function syntax
+5. [ ] No default exports (except where required by Next.js)
+6. [ ] `npm run test` passes with no regressions
+7. [ ] `npm run build` passes successfully

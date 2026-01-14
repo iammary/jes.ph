@@ -1,5 +1,5 @@
 import { Welcome } from '@/layout/Welcome';
 
-export default function Home() {
-  return <Welcome />;
-}
+const Home = () => <Welcome />;
+
+export default Home;

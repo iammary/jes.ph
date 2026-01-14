@@ -1,6 +1,5 @@
 import { render } from '@testing-library/react';
 import { Scene, Canvas } from './Scene';
-import React from 'react';
 import { createRoot } from '@react-three/fiber';
 
 vi.mock('@react-three/fiber', () => ({
