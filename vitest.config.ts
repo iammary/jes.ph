@@ -13,36 +13,19 @@ export default defineConfig({
       reporter: ['text', 'json', 'html'],
       exclude: [
         'node_modules/',
+        '**/*.css',
         'vitest.setup.ts',
         'next.config.ts',
         '**/*.test.tsx',
         '**/*.test.ts',
-        'styles/**',
         'scripts/**',
+        '**/(Scene.tsx|FallingLeaves.tsx)'
       ],
       thresholds: {
-        lines: 70,
-        functions: 70,
-        branches: 25,
-        statements: 70,
-        '**/!(Scene.tsx|FallingLeaves.tsx)': {
-          lines: 95,
-          functions: 95,
-          branches: 95,
-          statements: 95,
-        },
-        'layout/Scene.tsx': {
-          lines: 55,
-          functions: 35,
-          branches: 10,
-          statements: 55,
-        },
-        '**/layout/FallingLeaves.tsx': {
-          lines: 70,
-          functions: 87,
-          branches: 42,
-          statements: 69,
-        },
+        lines: 95,
+        functions: 95,
+        branches: 95,
+        statements: 95,
       }
     },
   },

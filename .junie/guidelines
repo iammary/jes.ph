@@ -32,6 +32,12 @@
 - Non-essential comments **MUST NOT** be added.
 - Placeholder, explanatory, or mock-related comments that do not affect runtime behavior **MUST** be avoided.
 
+### 1.7 Project Structure and Imports
+- Next.js Route Groups **MUST** be used for organization where appropriate (e.g., `(marketing)`).
+- Utility functions and helpers **MUST** be placed in the `lib/` directory.
+- UI components **MUST** be colocated with their respective features or placed in `components/` or `layout/` as appropriate.
+- Tests **MUST** be colocated with the file they test.
+
 ---
 
 ## 2. Styling Rules

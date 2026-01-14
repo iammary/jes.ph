@@ -25,7 +25,7 @@ vi.mock('@react-three/drei', () => {
   };
 });
 
-vi.mock('@/layout/FallingLeaves', () => ({
+vi.mock('@/components/scene/FallingLeaves', () => ({
   FallingLeaves: () => <div data-testid="falling-leaves" />,
 }));
 

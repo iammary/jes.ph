@@ -1,4 +1,4 @@
-import { Welcome } from '@/layout/Welcome';
+import { Welcome } from './components/Welcome';
 
 const Home = () => <Welcome />;
 

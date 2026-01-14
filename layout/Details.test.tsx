@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { Details } from './Details';
+import { Details } from '@/layout/Details';
 
 describe('Details', () => {
   it('renders navigation links', () => {

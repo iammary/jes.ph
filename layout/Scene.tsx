@@ -4,9 +4,9 @@ import { Mesh, PlaneGeometry, Group, MeshBasicMaterial, ShapeGeometry } from 'th
 import { useRef, useState, useLayoutEffect, FC, PropsWithChildren } from 'react';
 import { createRoot, events, extend, ReconcilerRoot, useFrame } from '@react-three/fiber';
 import { Plane, useAspect, useTexture } from '@react-three/drei';
-import { LayerMaterialType } from '@/utils/layer-material';
+import { LayerMaterialType } from '@/lib/layer-material';
 import Image from 'next/image';
-import '@/utils/layer-material';
+import '@/lib/layer-material';
 import { FallingLeaves } from '@/layout/FallingLeaves';
 
 const bgUrl = '/bg.png';

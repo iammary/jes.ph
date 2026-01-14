@@ -62,11 +62,12 @@ Create an optimized production build:
 
 ## Project Structure
 
-    app/        Next.js App Router pages, layouts, and metadata
-    layout/     Shared UI layout components
-    utils/      Utility functions and helpers
-    public/     Static assets (images, fonts)
-    styles/     Global styles and Tailwind configuration
+    app/           Next.js App Router pages, layouts, and metadata (marketing route group)
+    components/    Reusable UI components
+    layout/        Shared UI layout components
+    lib/           Utility functions and helpers
+    public/        Static assets (images, fonts)
+    styles/        Global styles and Tailwind configuration
 
 ## Testing
 
@@ -87,8 +88,12 @@ Lint the codebase:
 ### Test Conventions
 
 - Test files are colocated with the files they test
-- Example: Component.tsx → Component.test.tsx
+- Example: `Component.tsx` → `Component.test.tsx`
 - Tests favor functional and unit-level coverage over heavy integration tests
+
+## Architecture Guidelines
+
+This project follows a set of AI-assisted coding guidelines. See [.junie/guidelines](.junie/guidelines) for details on TypeScript usage, styling rules, and testing conventions.
 
 ## Deployment
 
