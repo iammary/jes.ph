@@ -1,7 +1,27 @@
+import type { Metadata } from 'next';
 import { ContentContainer } from '@/layouts/ContentContainer';
 import { CustomLink as Link } from '@/components/Link';
 import { BLOG_POSTS, UPCOMING_POST } from './blog-data';
 import { BlogCard } from '@/components/BlogCard';
+
+export const metadata: Metadata = {
+  title: 'Blog | Jes Anub',
+  description: 'Thoughts on software engineering, frontend architecture, and building scalable systems with the use of AI.',
+  openGraph: {
+    images: [
+      {
+        url: '/jes-code.png',
+        width: 1200,
+        height: 630,
+        alt: 'Blog | Jes Anub',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/jes-code.png'],
+  },
+};
 
 const BlogPage = () => (
   <ContentContainer centered full mode="light">
