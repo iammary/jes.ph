@@ -6,7 +6,14 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'How I Generated My Website Illustrations with Adobe Illustrator and Firefly AI',
   openGraph: {
-    images: ['/fallback.jpg'],
+    images: [
+      {
+        url: '/fallback.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'How I Generated My Website Illustrations with Adobe Illustrator and Firefly AI',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',

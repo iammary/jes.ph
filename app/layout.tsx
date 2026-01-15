@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Cal_Sans, Inter } from 'next/font/google';
 import '@/styles/globals.css';
 import { BodyContainer } from '@/layouts/BodyContainer';
+import { Analytics } from '@vercel/analytics/next';
 
 const calSans = Cal_Sans({
   variable: '--font-cal-sans',
@@ -21,7 +22,14 @@ export const metadata: Metadata = {
   title: 'Jes Anub | Software Engineer',
   description: 'Software engineer, frontend architect, based in Melbourne.',
   openGraph: {
-    images: ['/jes-code.png'],
+    images: [
+      {
+        url: '/jes-code.png',
+        width: 1200,
+        height: 630,
+        alt: 'Jes Anub | Software Engineer',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
@@ -37,6 +45,7 @@ const RootLayout = ({
   <html lang="en">
     <body className={`${calSans.variable} ${inter.variable} antialiased`}>
       <BodyContainer>{children}</BodyContainer>
+      <Analytics />
     </body>
   </html>
 );

@@ -4,6 +4,20 @@ import { ContentContainer } from '@/layouts/ContentContainer';
 export const metadata: Metadata = {
   title: 'About | Jes',
   description: 'Frontend-focused software engineer based in Melbourne.',
+  openGraph: {
+    images: [
+      {
+        url: '/jes-code.png',
+        width: 1200,
+        height: 630,
+        alt: 'About | Jes',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/jes-code.png'],
+  },
 };
 
 const About = () => (
