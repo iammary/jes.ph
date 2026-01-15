@@ -1,6 +1,18 @@
 import { CustomLink as Link } from '@/components/Link';
 import Image from 'next/image';
 import { Blog } from '@/layouts/Blog';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'How I Generated My Website Illustrations with Adobe Illustrator and Firefly AI',
+  openGraph: {
+    images: ['/fallback.jpg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/fallback.jpg'],
+  },
+};
 
 export default function BlogPost() {
   return (
@@ -62,7 +74,7 @@ export default function BlogPost() {
         </p>
         <div className="flex flex-col items-center my-8">
           <Image src="/jes.png" alt="Jes Illustration" width={250} height={250} className="rounded-lg shadow-md" />
-          <p className="text-sm text-gray-500 mt-2">jes.png - Generated with Ideogram 3</p>
+          <p className="text-sm text-gray-500 mt-2">jes.png - generated with Ideogram 3</p>
         </div>
         <p>
           While Firefly is great for backgrounds, partner models like Ideogram really shine when you need that extra level of detail in the subject matter. I
@@ -112,13 +124,13 @@ export default function BlogPost() {
           <div className="flex flex-col items-center">
             <Image src="/jes-sad.png" alt="Jes Sad" width={250} height={250} className="rounded-lg shadow-md" />
             <p className="text-sm text-gray-500 mt-4 text-center">
-              <code>jes-sad.png</code> - used for the 404 page template.
+              <code>jes-sad.png</code> - used for the 404 page template
             </p>
           </div>
           <div className="flex flex-col items-center">
             <Image src="/jes-wait.png" alt="Jes Waiting" width={250} height={250} className="rounded-lg shadow-md" />
             <p className="text-sm text-gray-500 mt-4 text-center">
-              <code>jes-wait.png</code> - used for the coming soon page.
+              <code>jes-wait.png</code> - used for the coming soon page
             </p>
           </div>
         </div>

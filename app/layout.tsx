@@ -20,6 +20,13 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://jes.ph'),
   title: 'Jes Anub | Software Engineer',
   description: 'Software engineer, frontend architect, based in Melbourne.',
+  openGraph: {
+    images: ['/jes-code.png'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/jes-code.png'],
+  },
 };
 
 const RootLayout = ({
