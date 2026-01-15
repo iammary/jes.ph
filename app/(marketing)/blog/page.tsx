@@ -1,18 +1,26 @@
-import { ContentContainer } from '@/layout/ContentContainer';
+import { ContentContainer } from '@/layouts/ContentContainer';
 import { CustomLink as Link } from '@/components/Link';
-import Image from 'next/image';
+import { BLOG_POSTS, UPCOMING_POST } from './blog-data';
+import { BlogCard } from '@/components/BlogCard';
 
-const BlogComingSoon = () => (
+const BlogPage = () => (
   <ContentContainer centered mode="light">
-    <div className="flex flex-col items-center text-center gap-8">
-      <h1>Coming Soon</h1>
-      <Image src="/jes-wait.png" alt="Jes Code" width={200} height={200} priority />
-      <p>I&#39;m currently working on some interesting content. Stay tuned!</p>
-      <Link href="/" asButton>
+    <div className="flex flex-col items-center text-center gap-8 w-full max-w-4xl">
+      <h1 className="text-4xl font-bold">Blog</h1>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full mt-8">
+        {BLOG_POSTS.map(post => (
+          <BlogCard key={post.slug} post={post} />
+        ))}
+
+        <BlogCard post={UPCOMING_POST} isUpcoming />
+      </div>
+
+      <Link href="/" asButton className="mt-8">
         Go Home
       </Link>
     </div>
   </ContentContainer>
 );
 
-export default BlogComingSoon;
+export default BlogPage;

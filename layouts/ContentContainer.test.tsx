@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { ContentContainer } from '@/layout/ContentContainer';
+import { ContentContainer } from '@/layouts/ContentContainer';
 
 describe('ContentContainer', () => {
   it('renders children correctly', () => {
@@ -31,7 +31,7 @@ describe('ContentContainer', () => {
   it('applies light mode classes when mode is light', () => {
     const { container } = render(
       <ContentContainer mode="light">
-        <div>Content</div>
+        <a href="/test">Link</a>
       </ContentContainer>,
     );
 

@@ -6,7 +6,7 @@ vi.mock('next/font/google', () => ({
   Inter: () => ({ variable: 'inter' }),
 }));
 
-vi.mock('@/layout/BodyContainer', () => ({
+vi.mock('@/layouts/BodyContainer', () => ({
   BodyContainer: ({ children }: { children: React.ReactNode }) => <div data-testid="body-container">{children}</div>,
 }));
 

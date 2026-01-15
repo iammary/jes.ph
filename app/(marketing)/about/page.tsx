@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { ContentContainer } from '@/layout/ContentContainer';
+import { ContentContainer } from '@/layouts/ContentContainer';
 
 export const metadata: Metadata = {
   title: 'About | Jes',

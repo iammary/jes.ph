@@ -19,6 +19,7 @@
   --spacing-base: calc(var(--base-unit) * 10); /* 40px */
   --spacing-lg: calc(var(--base-unit) * 15); /* 60px */
   --border-radius: calc(var(--base-unit) * 2); /* 8px */
+  --highlight-red: #dc2626; /* Tailwind red-600 */
 }
 
 html,
@@ -43,7 +44,8 @@ body {
 }
 
 [data-theme='light'] a {
-  color: var(--foreground);
+  font-weight: var(--font-weight-medium);
+  color: var(--highlight-red);
 }
 
 [data-theme='dark'] {
@@ -52,7 +54,8 @@ body {
 }
 
 [data-theme='dark'] a {
-  color: var(--foreground);
+  font-weight: var(--font-weight-medium);
+  color: var(--highlight-red);
 }
 
 @layer base {
@@ -80,6 +83,7 @@ body {
   blockquote p {
     font-family: var(--font-cal-sans), serif;
   }
+
   a {
     @apply no-underline
       transition-all duration-200;

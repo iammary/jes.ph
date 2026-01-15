@@ -1,11 +1,11 @@
 import { render, screen } from '@testing-library/react';
-import { BodyContainer } from '@/layout/BodyContainer';
+import { BodyContainer } from '@/layouts/BodyContainer';
 
 vi.mock('./Scene', () => ({
   Scene: () => <div data-testid="scene" />,
 }));
 
-vi.mock('@/layout/Details', () => ({
+vi.mock('@/layouts/Details', () => ({
   Details: () => <div data-testid="details" />,
 }));
 

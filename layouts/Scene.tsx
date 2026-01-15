@@ -7,7 +7,7 @@ import { Plane, useAspect, useTexture } from '@react-three/drei';
 import { LayerMaterialType } from '@/lib/layer-material';
 import Image from 'next/image';
 import '@/lib/layer-material';
-import { FallingLeaves } from '@/layout/FallingLeaves';
+import { FallingLeaves } from '@/layouts/FallingLeaves';
 
 const bgUrl = '/bg.png';
 const leaves1Url = '/autumn.png';

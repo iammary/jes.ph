@@ -1,13 +1,13 @@
 import { render, screen } from '@testing-library/react';
-import BlogComingSoon from './page';
+import BlogPage from './page';
 
 describe('Blog Page', () => {
-  it('renders coming soon content', () => {
-    render(<BlogComingSoon />);
+  it('renders blog content', () => {
+    render(<BlogPage />);
 
-    expect(screen.getByText('Coming Soon')).toBeInTheDocument();
-    expect(screen.getByAltText('Jes Code')).toBeInTheDocument();
-    expect(screen.getByText(/I'm currently working on some interesting content/i)).toBeInTheDocument();
+    expect(screen.getByText('Blog')).toBeInTheDocument();
+    expect(screen.getByText(/How I Generated My Website Illustrations/i)).toBeInTheDocument();
+    expect(screen.getByAltText('More coming soon')).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /go home/i })).toBeInTheDocument();
   });
 });

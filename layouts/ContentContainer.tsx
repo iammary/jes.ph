@@ -11,7 +11,7 @@ export const ContentContainer = ({ children, centered = false, mode = 'dark' }: 
     }`}
     data-theme={mode}>
     <div
-      className={`z-10 w-full lg:w-3/4 xl:w-1/2 rounded-(--border-radius) p-8 md:p-10 flex flex-col gap-(--spacing-sm) max-h-[calc(100vh-calc(var(--spacing-base)*6))] overflow-y-auto ${
+      className={`z-10 w-full lg:w-3/4 xl:w-1/2 rounded-(--border-radius) p-8 md:p-10 flex flex-col gap-(--spacing-sm) max-h-[calc(100vh-calc(var(--spacing-base)*6))] overflow-y-auto [&_a]:font-bold ${
         mode === 'light' ? 'bg-white/95 text-black' : 'bg-black/85 text-white'
       }`}>
       {children}

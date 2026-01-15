@@ -1,4 +1,4 @@
-import { ContentContainer } from '@/layout/ContentContainer';
+import { ContentContainer } from '@/layouts/ContentContainer';
 import { CustomLink as Link } from '@/components/Link';
 import Image from 'next/image';
 

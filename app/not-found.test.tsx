@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import NotFound from './not-found';
 
-vi.mock('@/layout/ContentContainer', () => ({
+vi.mock('@/layouts/ContentContainer', () => ({
   ContentContainer: ({ children, centered }: { children: React.ReactNode; centered?: boolean }) => (
     <div data-testid="content-container" data-centered={centered}>
       {children}

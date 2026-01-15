@@ -1,4 +1,4 @@
-import { ContentContainer } from '@/layout/ContentContainer';
+import { ContentContainer } from '@/layouts/ContentContainer';
 
 export const Welcome = () => (
   <ContentContainer>

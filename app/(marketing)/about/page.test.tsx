@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import About from './page';
 
-vi.mock('@/layout/ContentContainer', () => ({
+vi.mock('@/layouts/ContentContainer', () => ({
   ContentContainer: ({ children }: { children: React.ReactNode }) => <div data-testid="content-container">{children}</div>,
 }));
 

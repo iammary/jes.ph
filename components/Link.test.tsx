@@ -7,6 +7,8 @@ describe('CustomLink', () => {
     const link = screen.getByRole('link', { name: /test link/i });
     expect(link).toBeInTheDocument();
     expect(link).toHaveAttribute('href', '/test');
+    expect(link).toHaveClass('transition-colors');
+    expect(link).not.toHaveClass('hover:underline');
     expect(link).not.toHaveClass('px-6');
     expect(link).not.toHaveClass('rounded-full');
   });

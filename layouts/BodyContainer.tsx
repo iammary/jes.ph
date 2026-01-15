@@ -1,5 +1,5 @@
-import { Scene } from '@/layout/Scene';
-import { Details } from '@/layout/Details';
+import { Scene } from '@/layouts/Scene';
+import { Details } from '@/layouts/Details';
 
 export const BodyContainer = ({ children }: { children: React.ReactNode }) => (
   <div id="root">

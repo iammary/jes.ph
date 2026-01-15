@@ -14,14 +14,16 @@ export const CustomLink = ({ asButton, mode = 'light', className = '', children,
     const modeStyles = mode === 'light' ? 'bg-gray-200 text-black hover:bg-white' : 'bg-gray-800 text-white hover:bg-black';
 
     return (
-      <Link className={`${baseStyles} ${modeStyles} ${className}`} {...props}>
+      <Link className={`font-normal ${baseStyles} ${modeStyles} ${className}`} {...props}>
         {children}
       </Link>
     );
   }
 
+  const defaultStyles = 'transition-colors';
+
   return (
-    <Link className={className} {...props}>
+    <Link className={`${defaultStyles} ${className}`} {...props}>
       {children}
     </Link>
   );

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Cal_Sans, Inter } from 'next/font/google';
 import '@/styles/globals.css';
-import { BodyContainer } from '@/layout/BodyContainer';
+import { BodyContainer } from '@/layouts/BodyContainer';
 
 const calSans = Cal_Sans({
   variable: '--font-cal-sans',
