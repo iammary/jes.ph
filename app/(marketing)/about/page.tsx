@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 const About = () => (
-  <ContentContainer>
+  <ContentContainer mode="light">
     <h1>About Me</h1>
     <div className="flex flex-col gap-4">
       <p>I’m Jes — a software engineer in Melbourne, turning ideas into web apps for 15+ years.</p>
