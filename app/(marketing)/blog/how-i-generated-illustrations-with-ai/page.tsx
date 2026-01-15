@@ -75,7 +75,7 @@ export default function BlogPost() {
           When I needed more intricate details, like for <code>jes.png</code>, I turned to premium partner models. Specifically, <code>jes.png</code> was
           generated using{' '}
           <Link href="https://ideogram.ai" target="_blank">
-            Illustrator Ideogram 3
+            Ideogram 3
           </Link>
           .
         </p>

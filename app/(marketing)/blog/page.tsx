@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 };
 
 const BlogPage = () => (
-  <ContentContainer centered full mode="light">
+  <ContentContainer centered mode="light">
     <div className="flex flex-col items-center text-center gap-8 w-full">
       <h1 className="text-4xl font-bold">Blog</h1>
 

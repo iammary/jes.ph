@@ -11,7 +11,7 @@ interface BlogPostTemplateProps {
 export const Blog = ({ title, date, children }: BlogPostTemplateProps) => {
   return (
     <ContentContainer centered full mode="light">
-      <article className="w-full py-12 px-4">
+      <article className="w-full py-4 px-4">
         <header className="mb-12 text-center">
           <Link href="/blog" className="text-sm font-medium mb-4 inline-block">
             ← Back to Blog

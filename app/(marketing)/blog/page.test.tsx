@@ -21,6 +21,5 @@ describe('Blog Page', () => {
     const container = screen.getByTestId('content-container');
     expect(container).toBeInTheDocument();
     expect(container).toHaveAttribute('data-centered', 'true');
-    expect(container).toHaveAttribute('data-full', 'true');
   });
 });
