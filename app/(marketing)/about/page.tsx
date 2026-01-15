@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { ContentContainer } from '@/layouts/ContentContainer';
 
 export const metadata: Metadata = {
-  title: 'About | Jes',
-  description: 'Frontend-focused software engineer based in Melbourne.',
+  title: 'About | Jes Anub',
+  description: 'Software engineer, frontend architect, based in Melbourne.',
   openGraph: {
     images: [
       {

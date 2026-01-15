@@ -4,7 +4,7 @@ import { Blog } from '@/layouts/Blog';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'How I Generated My Website Illustrations with Adobe Illustrator and Firefly AI',
+  title: 'How I Generated My Website Illustrations with Adobe Illustrator and Firefly AI | Jes Anub',
   openGraph: {
     images: [
       {
