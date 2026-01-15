@@ -1,19 +1,20 @@
 interface ContentContainerProps {
   children: React.ReactNode;
   centered?: boolean;
+  full?: boolean;
   mode?: 'dark' | 'light';
 }
 
-export const ContentContainer = ({ children, centered = false, mode = 'dark' }: ContentContainerProps) => (
+export const ContentContainer = ({ children, centered = false, full = false, mode = 'dark' }: ContentContainerProps) => (
   <div
     className={`flex min-h-screen w-full items-center justify-center p-(--spacing-base) pt-(--spacing-md) md:pt-(--spacing-lg) md:pl-(--spacing-base) ${
       centered ? 'md:justify-center' : 'md:justify-start'
     }`}
     data-theme={mode}>
     <div
-      className={`z-10 w-full lg:w-3/4 xl:w-1/2 rounded-(--border-radius) p-8 md:p-10 flex flex-col gap-(--spacing-sm) max-h-[calc(100vh-calc(var(--spacing-base)*6))] overflow-y-auto [&_a]:font-bold ${
-        mode === 'light' ? 'bg-white/95 text-black' : 'bg-black/85 text-white'
-      }`}>
+      className={`z-10 w-full rounded-(--border-radius) p-8 md:p-10 flex flex-col gap-(--spacing-sm) max-h-[calc(100vh-calc(var(--spacing-base)*6))] overflow-y-auto [&_a]:font-bold ${
+        full ? 'max-w-[1200px]' : 'lg:w-3/4 xl:w-1/2'
+      } ${mode === 'light' ? 'bg-white/95 text-black' : 'bg-black/85 text-white'}`}>
       {children}
     </div>
   </div>

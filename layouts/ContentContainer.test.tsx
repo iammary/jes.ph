@@ -65,4 +65,30 @@ describe('ContentContainer', () => {
     expect(outerDiv).toHaveClass('md:justify-start');
     expect(outerDiv).not.toHaveClass('md:justify-center');
   });
+
+  it('applies full width classes when full prop is true', () => {
+    const { container } = render(
+      <ContentContainer full>
+        <div>Content</div>
+      </ContentContainer>,
+    );
+
+    const outerDiv = container.firstChild as HTMLElement;
+    const innerDiv = outerDiv.firstChild as HTMLElement;
+    expect(innerDiv).toHaveClass('max-w-[1200px]');
+    expect(innerDiv).not.toHaveClass('lg:w-3/4', 'xl:w-1/2');
+  });
+
+  it('applies default width classes when full prop is false', () => {
+    const { container } = render(
+      <ContentContainer>
+        <div>Content</div>
+      </ContentContainer>,
+    );
+
+    const outerDiv = container.firstChild as HTMLElement;
+    const innerDiv = outerDiv.firstChild as HTMLElement;
+    expect(innerDiv).toHaveClass('lg:w-3/4', 'xl:w-1/2');
+    expect(innerDiv).not.toHaveClass('max-w-[1200px]');
+  });
 });
