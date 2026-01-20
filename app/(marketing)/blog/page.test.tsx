@@ -14,7 +14,7 @@ describe('Blog Page', () => {
     render(<BlogPage />);
 
     expect(screen.getByText('Blog')).toBeInTheDocument();
-    expect(screen.getByText(/How I Generated My Website Illustrations/i)).toBeInTheDocument();
+    expect(screen.getByText(/How I Generated My Site Illustrations/i)).toBeInTheDocument();
     expect(screen.getByAltText('More coming soon')).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /go home/i })).toBeInTheDocument();
 

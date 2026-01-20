@@ -16,7 +16,7 @@ export interface UpcomingPost {
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'how-i-generated-illustrations-with-ai',
-    title: 'How I Generated My Website Illustrations with Adobe Illustrator and Firefly AI',
+    title: 'How I Generated My Site Illustrations with Adobe Illustrator and Firefly AI',
     description: 'Learn how I used Adobe Creative Cloud and Firefly AI to create the visuals for this site.',
     image: '/jes.png',
     imageAlt: 'How I Generated Illustrations',

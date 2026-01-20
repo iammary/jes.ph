@@ -9,7 +9,7 @@ import Image from 'next/image';
 import '@/lib/layer-material';
 import { FallingLeaves } from '@/layouts/FallingLeaves';
 
-const bgUrl = '/bg.png';
+const bgUrl = '/bg.webp';
 const leaves1Url = '/autumn.png';
 const leaves2Url = '/autumn-1.png';
 

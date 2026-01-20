@@ -5,9 +5,7 @@ describe('AI Illustrations Blog Post', () => {
   it('renders the blog post content', () => {
     render(<BlogPost />);
 
-    expect(
-      screen.getByRole('heading', { level: 1, name: /How I Generated My Website Illustrations with Adobe Illustrator and Firefly AI/i }),
-    ).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 1, name: /How I Generated My Site Illustrations with Adobe Illustrator and Firefly AI/i })).toBeInTheDocument();
     expect(screen.getAllByText(/Firefly Vector 4/i).length).toBeGreaterThan(0);
     expect(screen.getAllByText(/Ideogram 3/i).length).toBeGreaterThan(0);
     expect(screen.getByText(/4,000 AI credits/i)).toBeInTheDocument();

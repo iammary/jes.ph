@@ -4,14 +4,14 @@ import { Blog } from '@/layouts/Blog';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'How I Generated My Website Illustrations with Adobe Illustrator and Firefly AI | Jes Anub',
+  title: 'How I Generated My Site Illustrations with Adobe Illustrator and Firefly AI | Jes Anub',
   openGraph: {
     images: [
       {
         url: '/fallback.jpg',
         width: 1200,
         height: 630,
-        alt: 'How I Generated My Website Illustrations with Adobe Illustrator and Firefly AI',
+        alt: 'How I Generated My Site Illustrations with Adobe Illustrator and Firefly AI',
       },
     ],
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 export default function BlogPost() {
   return (
-    <Blog title="How I Generated My Website Illustrations with Adobe Illustrator and Firefly AI" date="January 15, 2026">
+    <Blog title="How I Generated My Site Illustrations with Adobe Illustrator and Firefly AI" date="January 15, 2026">
       <section>
         <p>
           In this post, I’ll walk through how I created the illustrations for this site. By combining Adobe Illustrator and Photoshop with Adobe Firefly AI, I
