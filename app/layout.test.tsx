@@ -6,6 +6,10 @@ vi.mock('next/font/google', () => ({
   Inter: () => ({ variable: 'inter' }),
 }));
 
+vi.mock('@vercel/analytics/next', () => ({
+  Analytics: () => {},
+}));
+
 vi.mock('@/layouts/BodyContainer', () => ({
   BodyContainer: ({ children }: { children: React.ReactNode }) => <div data-testid="body-container">{children}</div>,
 }));
@@ -18,7 +22,8 @@ vi.spyOn(console, 'error').mockImplementation((...args: any[]) => {
     msg.includes('In HTML, <html> cannot be a child of') ||
     msg.includes('cannot be a child of <html>') ||
     msg.includes('cannot be a child of <div>') ||
-    msg.includes('hydration error')
+    msg.includes('hydration error') ||
+    msg.includes('DOMException [NotSupportedError]')
   ) {
     return;
   }
