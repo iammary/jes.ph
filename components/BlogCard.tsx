@@ -14,6 +14,7 @@ export const BlogCard = (props: BlogCardProps) => {
           src={post.image}
           alt={post.imageAlt}
           fill
+          placeholder="blur"
           className={isUpcoming ? 'object-contain' : 'object-cover group-hover:scale-105 transition-transform duration-300'}
         />
       </div>

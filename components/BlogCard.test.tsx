@@ -7,14 +7,14 @@ describe('BlogCard', () => {
     slug: 'test-post',
     title: 'Test Blog Post',
     description: 'A test description for the blog post.',
-    image: '/test-image.png',
+    image: { src: '/test-image.png', height: 100, width: 100, blurDataURL: 'data:image/png;base64,imagedata' },
     imageAlt: 'Test Image Alt',
   };
 
   const mockUpcomingPost: UpcomingPost = {
     title: 'Upcoming Post',
     description: 'Coming soon description.',
-    image: '/upcoming-image.png',
+    image: { src: '/upcoming-image.png', height: 100, width: 100, blurDataURL: 'data:image/png;base64,imagedata' },
     imageAlt: 'Upcoming Image Alt',
   };
 

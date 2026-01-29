@@ -2,6 +2,13 @@ import { CustomLink as Link } from '@/components/Link';
 import Image from 'next/image';
 import { Blog } from '@/layouts/Blog';
 import type { Metadata } from 'next';
+import autumnImg from '@/public/autumn.png';
+import autumn1Img from '@/public/autumn-1.png';
+import bgImg from '@/public/bg.jpg';
+import jesImg from '@/public/jes.png';
+import jesCodeImg from '@/public/jes-code.png';
+import jesSadImg from '@/public/jes-sad.png';
+import jesWaitImg from '@/public/jes-wait.png';
 
 export const metadata: Metadata = {
   title: 'How I Generated My Site Illustrations with Adobe Illustrator and Firefly AI | Jes Anub',
@@ -51,15 +58,36 @@ export default function BlogPost() {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
           <div className="flex flex-col items-center">
-            <Image src="/autumn.png" alt="Autumn Illustration" width={300} height={200} className="rounded-lg shadow-md object-cover h-48 w-full" />
+            <Image
+              src={autumnImg}
+              alt="Autumn Illustration"
+              placeholder="blur"
+              width={300}
+              height={200}
+              className="rounded-lg shadow-md object-cover h-48 w-full"
+            />
             <p className="text-sm text-gray-500 mt-2">autumn.png</p>
           </div>
           <div className="flex flex-col items-center">
-            <Image src="/autumn-1.png" alt="Autumn Variation" width={300} height={200} className="rounded-lg shadow-md object-cover h-48 w-full" />
+            <Image
+              src={autumn1Img}
+              alt="Autumn Variation"
+              placeholder="blur"
+              width={300}
+              height={200}
+              className="rounded-lg shadow-md object-cover h-48 w-full"
+            />
             <p className="text-sm text-gray-500 mt-2">autumn-1.png</p>
           </div>
           <div className="flex flex-col items-center">
-            <Image src="/bg.jpg" alt="Background Illustration" width={300} height={200} className="rounded-lg shadow-md object-cover h-48 w-full" />
+            <Image
+              src={bgImg}
+              alt="Background Illustration"
+              placeholder="blur"
+              width={300}
+              height={200}
+              className="rounded-lg shadow-md object-cover h-48 w-full"
+            />
             <p className="text-sm text-gray-500 mt-2">bg.jpg</p>
           </div>
         </div>
@@ -80,7 +108,7 @@ export default function BlogPost() {
           .
         </p>
         <div className="flex flex-col items-center my-8">
-          <Image src="/jes.png" alt="Jes Illustration" width={250} height={250} className="rounded-lg shadow-md" />
+          <Image src={jesImg} alt="Jes Illustration" placeholder="blur" width={250} height={250} className="rounded-lg shadow-md" />
           <p className="text-sm text-gray-500 mt-2">jes.png - generated with Ideogram 3</p>
         </div>
         <p>
@@ -118,7 +146,7 @@ export default function BlogPost() {
         </p>
 
         <div className="flex flex-col items-center my-8">
-          <Image src="/jes-code.png" alt="Jes Coding" width={300} height={300} className="rounded-lg shadow-md" />
+          <Image src={jesCodeImg} alt="Jes Coding" placeholder="blur" width={300} height={300} className="rounded-lg shadow-md" />
           <p className="text-sm text-gray-500 mt-4 text-center max-w-md">
             <code>jes-code.png</code>
           </p>
@@ -129,13 +157,13 @@ export default function BlogPost() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
           <div className="flex flex-col items-center">
-            <Image src="/jes-sad.png" alt="Jes Sad" width={250} height={250} className="rounded-lg shadow-md" />
+            <Image src={jesSadImg} alt="Jes Sad" placeholder="blur" width={250} height={250} className="rounded-lg shadow-md" />
             <p className="text-sm text-gray-500 mt-4 text-center">
               <code>jes-sad.png</code> - used for the 404 page template
             </p>
           </div>
           <div className="flex flex-col items-center">
-            <Image src="/jes-wait.png" alt="Jes Waiting" width={250} height={250} className="rounded-lg shadow-md" />
+            <Image src={jesWaitImg} alt="Jes Waiting" placeholder="blur" width={250} height={250} className="rounded-lg shadow-md" />
             <p className="text-sm text-gray-500 mt-4 text-center">
               <code>jes-wait.png</code> - used for the coming soon page
             </p>
