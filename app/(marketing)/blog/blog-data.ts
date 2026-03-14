@@ -19,6 +19,13 @@ export interface UpcomingPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'how-i-use-ai-to-run-my-daily-dev-workflow',
+    title: 'How I Use AI to Run My Daily Dev Workflow',
+    description: 'A look at the AI-assisted workflow I use on jes.ph to plan, code, review, and keep momentum.',
+    image: '/ai-workflow-cover.svg',
+    imageAlt: 'How I Use AI to Run My Daily Dev Workflow',
+  },
+  {
     slug: 'how-i-generated-illustrations-with-ai',
     title: 'How I Generated My Site Illustrations with Adobe Illustrator and Firefly AI',
     description: 'Learn how I used Adobe Creative Cloud and Firefly AI to create the visuals for this site.',
