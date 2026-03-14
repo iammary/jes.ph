@@ -6,7 +6,7 @@ import { BlogCard } from '@/components/BlogCard';
 
 export const metadata: Metadata = {
   title: 'Blog | Jes Anub',
-  description: 'Thoughts on software engineering, frontend architecture, and building scalable systems with the use of AI.',
+  description: 'Thoughts on AI-first engineering, software systems, and shipping better with AI.',
   openGraph: {
     images: [
       {
