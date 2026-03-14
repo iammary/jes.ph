@@ -6,6 +6,7 @@ type BlogCardProps = { post: BlogPost; isUpcoming?: false } | { post: UpcomingPo
 
 export const BlogCard = (props: BlogCardProps) => {
   const { post, isUpcoming } = props;
+  const isStaticImage = typeof post.image !== 'string';
 
   const content = (
     <>
@@ -14,7 +15,7 @@ export const BlogCard = (props: BlogCardProps) => {
           src={post.image}
           alt={post.imageAlt}
           fill
-          placeholder="blur"
+          placeholder={isStaticImage ? 'blur' : 'empty'}
           className={isUpcoming ? 'object-contain' : 'object-cover group-hover:scale-105 transition-transform duration-300'}
         />
       </div>
