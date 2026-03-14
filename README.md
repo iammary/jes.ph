@@ -93,7 +93,7 @@ Lint the codebase:
 
 ## Architecture Guidelines
 
-This project follows a set of AI-assisted coding guidelines. See [.junie/guidelines](.junie/guidelines) for details on TypeScript usage, styling rules, and testing conventions.
+This project follows a set of AI-assisted coding guidelines. See [AGENTS.md](AGENTS.md) for the current Codex memory covering TypeScript usage, styling rules, and testing conventions.
 
 ## Deployment
 

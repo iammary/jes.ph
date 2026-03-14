@@ -3,7 +3,7 @@ import { ContentContainer } from '@/layouts/ContentContainer';
 
 export const metadata: Metadata = {
   title: 'About | Jes Anub',
-  description: 'Software engineer, frontend architect, based in Melbourne.',
+  description: 'AI-first engineer building practical products, systems, and workflows from Melbourne.',
   openGraph: {
     images: [
       {
@@ -27,17 +27,20 @@ const About = () => (
       <p>I’m Jes — a software engineer in Melbourne, turning ideas into web apps for 15+ years.</p>
       <p>
         I’ve worked in the Philippines, Singapore, and Australia, collaborating with teams to build products in EdTech, FinTech (like cryptocurrency and
-        stockbroking), and geospatial technologies. As my career has evolved, I’ve found myself increasingly interested in frontend architecture. I enjoy
-        creating systems that are scalable, easy to maintain, and support teams as products grow.
+        stockbroking), and geospatial technologies. Over time, my work has shifted from frontend leadership into AI-first engineering, where I use AI heavily
+        and intentionally to design, build, and ship products faster.
       </p>
       <p>
-        I care deeply about the foundations: design systems, shared UI platforms, micro-frontend patterns, and and the JavaScript that ties everything together.
-        I enjoy working at the intersection of engineering and design, shaping frontend systems that are intuitive for users and pleasant for developers to work
-        with.
+        I care about applying AI in ways that are practical, efficient, and grounded in real engineering discipline. That means building solid systems,
+        improving developer workflows, and using AI to reduce friction across prototyping, implementation, and iteration.
+      </p>
+      <p>
+        My frontend background still shapes how I work. I care deeply about clear interfaces, scalable architecture, and developer experience, and I bring that
+        same systems thinking into AI-assisted product development.
       </p>
       <p>
         Alongside the technical work, I’ve spent much of my career mentoring and supporting other engineers. I value strong engineering practices, clear
-        communication, and creating environments where teams can do their best work.
+        communication, and helping teams adopt AI in ways that make them more effective, not more chaotic.
       </p>
       <p>At the core of my approach is a simple idea:</p>
       <blockquote>
@@ -45,7 +48,7 @@ const About = () => (
           Great software not only enhances the user experience, <br /> but also empowers the teams who build it.
         </p>
       </blockquote>
-      <p>Whether I’m thinking about architecture, performance, testing, or developer workflows, my goal is always the same — to build systems that age well.</p>
+      <p>Whether I’m working on AI workflows, product architecture, performance, or developer tooling, my goal is the same: build systems that age well.</p>
     </div>
   </ContentContainer>
 );

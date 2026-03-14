@@ -6,7 +6,7 @@ describe('Welcome', () => {
     render(<Welcome />);
 
     expect(screen.getByText(/Hey, I'm Jes/i)).toBeInTheDocument();
-    expect(screen.getByText(/I build frontend architectures/i)).toBeInTheDocument();
+    expect(screen.getByText(/I build AI-first products and workflows/i)).toBeInTheDocument();
     expect(screen.getByText(/Melbourne, Australia/i)).toBeInTheDocument();
   });
 });
