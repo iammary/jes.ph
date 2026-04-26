@@ -19,7 +19,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://jes.ph'),
-  title: 'Jes Anub | Software Engineer',
+  title: 'Jes Anub | Product Engineer',
   description: 'AI-first engineer building practical products, systems, and workflows from Melbourne.',
   openGraph: {
     images: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         url: '/jes-code.png',
         width: 1200,
         height: 630,
-        alt: 'Jes Anub | Software Engineer',
+        alt: 'Jes Anub | Product Engineer',
       },
     ],
   },

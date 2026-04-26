@@ -3,7 +3,7 @@ import { ContentContainer } from '@/layouts/ContentContainer';
 
 export const metadata: Metadata = {
   title: 'About | Jes Anub',
-  description: 'AI-first engineer building practical products, systems, and workflows from Melbourne.',
+  description: 'Senior product engineer in Melbourne building product software, stabilising platforms, and using AI-supported engineering workflows.',
   openGraph: {
     images: [
       {
@@ -24,31 +24,37 @@ const About = () => (
   <ContentContainer mode="light">
     <h1>About Me</h1>
     <div className="flex flex-col gap-4">
-      <p>I’m Jes — a software engineer in Melbourne, turning ideas into web apps for 15+ years.</p>
+      <p>I&#39;m Jes, a senior product engineer based in Melbourne. I&#39;ve been building software for more than 15 years.</p>
       <p>
-        I’ve worked in the Philippines, Singapore, and Australia, collaborating with teams to build products in EdTech, FinTech (like cryptocurrency and
-        stockbroking), and geospatial technologies. Over time, my work has shifted from frontend leadership into AI-first engineering, where I use AI heavily
-        and intentionally to design, build, and ship products faster.
+        I&#39;ve worked in the Philippines, Singapore, and Australia, across EdTech, FinTech, stockbroking, cryptocurrency, and geospatial products. Most of my
+        work sits somewhere between product delivery and platform work. I like building the feature, but I also like making the system easier for the next
+        person to change.
       </p>
       <p>
-        I care about applying AI in ways that are practical, efficient, and grounded in real engineering discipline. That means building solid systems,
-        improving developer workflows, and using AI to reduce friction across prototyping, implementation, and iteration.
+        These days I stay close to customers and to the signals coming from production. I like finding the product decisions that make the experience smoother,
+        the platform stronger, and the next release easier to trust. Sometimes that means improving reliability. Sometimes it means shaping a feature. Sometimes
+        it means writing a clear enough plan that engineers and agents can implement it with confidence.
       </p>
       <p>
-        My frontend background still shapes how I work. I care deeply about clear interfaces, scalable architecture, and developer experience, and I bring that
-        same systems thinking into AI-assisted product development.
+        I use AI to make good engineering work faster and more thorough. Multi-agent workflows help with investigation, planning, code changes, review, tests,
+        and documentation, while I keep the work anchored in product fit, architecture, edge cases, monitoring signals, and release confidence.
       </p>
       <p>
-        Alongside the technical work, I’ve spent much of my career mentoring and supporting other engineers. I value strong engineering practices, clear
-        communication, and helping teams adopt AI in ways that make them more effective, not more chaotic.
+        My frontend background is central to how I build products, and it shows up most in my technical design work. I care about shaping the customer
+        experience, drawing clear system boundaries, and turning product ideas into plans that engineers and agents can build from. Good UX and good DX both
+        come from clear decisions, steady standards, and enough care in the details.
       </p>
-      <p>At the core of my approach is a simple idea:</p>
+      <p>
+        I like teams that stay close to customers, make decisions clear, and raise the quality bar in practical ways. The best engineering work I have done has
+        often been quiet but important. Clearer interfaces. Fewer repeated review comments. Faster tests. Better observability. Releases people can trust.
+      </p>
       <blockquote>
-        <p>
-          Great software not only enhances the user experience, <br /> but also empowers the teams who build it.
-        </p>
+        <p>Build the product people need, and the system the team can keep carrying.</p>
       </blockquote>
-      <p>Whether I’m working on AI workflows, product architecture, performance, or developer tooling, my goal is the same: build systems that age well.</p>
+      <p>
+        That is the thread through my work. I build products, strengthen platforms, improve how teams see and ship changes, and help engineers use AI with
+        clearer standards and more confidence.
+      </p>
     </div>
   </ContentContainer>
 );

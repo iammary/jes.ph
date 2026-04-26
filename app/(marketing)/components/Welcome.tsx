@@ -2,14 +2,16 @@ import { ContentContainer } from '@/layouts/ContentContainer';
 
 export const Welcome = () => (
   <ContentContainer>
-    <h1>Hey, I&#39;m Jes 👋 </h1>
+    <h1>Hey, I&#39;m Jes 👋</h1>
     <blockquote>
-      <p>And I love all things JS.</p>
+      <p>Senior product engineer in Melbourne.</p>
     </blockquote>
-    <p>I build AI-first products and workflows, pairing strong software foundations with practical, high-leverage use of AI.</p>
+    <p>I build product software, stabilise platforms, and help teams turn customer feedback into work that can ship.</p>
     <p>
-      I still care deeply about frontend architecture, but these days my focus is on shipping faster, automating smartly, and helping teams work better with AI.
+      My background is 15+ years across EdTech, FinTech, stockbroking, and geospatial products, with plenty of frontend architecture and platform modernisation
+      along the way.
     </p>
+    <p>I design practical multi-agent systems and workflows that help teams investigate, build, review, test, and document software with more confidence.</p>
     <p>📍 Melbourne, Australia</p>
   </ContentContainer>
 );
